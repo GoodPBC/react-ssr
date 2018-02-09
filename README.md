@@ -1,9 +1,12 @@
 # SSR ReactJS Boilerplate Project
 
+* This project is meant to serve as a starting point for server-side rendering using the MongoDB, ExpressJS, ReactJS and NodeJS.
+
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Rendering Server](#rendering)
 * [Support](#support)
 * [Contributing](#contributing)
 
@@ -17,12 +20,7 @@ npm install
 
 ## Usage
 
-Replace the contents of `README.md` with your project's:
-
-* React Server Side Rendering Boilerplate
-* This project is meant to serve as a starting point for server-side rendering using the MongoDB, ExpressJS, ReactJS and NodeJS.
-  Usage instructions
-  ======
+# Usage instructions
 
         1. NPM Package Dependencies and Descriptions
             	..* axios: 0.16.2
@@ -111,9 +109,9 @@ Replace the contents of `README.md` with your project's:
         			.__Package description here__[Github](http://github.com/liady/webpack.js-node-externals) || [NPM](https://www.npmjs.com/package/webpack.js-node-externals)
         			..* webpack.js-node-externals: 1.6.0
 
-## Putting together our Rendering Server
+## Rendering Server - Putting it together
 
-### Build Bare bones Application
+### Build A Bare bones Express Application
 
 1. **Create a simple express server with a home component.**
    we are going to create our package.json file and install all of our packages from above. -- Command["npm init"]
