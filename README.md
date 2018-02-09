@@ -227,7 +227,7 @@ const HomeStyle = {
 };
 ```
 
-If you refresh your page you will see that Webpack has rebundled the file and Nodemon has restarted the server to reflect the changes made to our bundle. So now we have a pretty dynamic development build and dev process going.
+If you refresh your page you will see that Webpack has re-bundled the file and nodemon has restarted the server to reflect the changes made to our bundle. So now we have a pretty dynamic development build and dev process going.
 
 **Lets Talk About Isomorphic Javascript & Universal Javascript**
 
@@ -239,6 +239,14 @@ _What is it_?
 
 In order to be truly using Universal Javascript, We should be using the same exact code on the server and client. However, at the time of creating this boilerplate NodeJS does not have built in support for es2015 modules. So we are using the the CommonJS module system in our index.js file will makes use of require statements and in our components we are using the es2015 modules system which makes use of imports and exports. We are running webpack and babel over our whole project., which does support es2015 modules. This allows us to make use of the es2015 modules. Because our server files are being handled by webpack and babel we want to do this so we can keep the context between react and express/node the same. Lets refactor our code to convert our index.js require statements to import statements like this:
 [github commit](https://github.com/GoodPBC/react-ssr/commit/5bc3b3d3c7858abaa8810e29f52701bab09ecab1#diff-1fdf421c05c1140f6d71444ea2b27638)
+
+**Event Handler Gotcha!!!**
+
+Normally we have our ReactJS components that are sent to the browser and rendered to a DOM node and then the event handlers are set up in the browser.
+
+With the way we have our application set up, we are bundling on the server and sending a string or raw HTML to the browser, so no javascript code is being sent to the browser. This means that our event handlers will not register.
+
+We need to create a way to send down all of our applications javascript code to the browser so that we can inject it onto the client and make our application work the way we want it to.
 
 2. Just a landing page
 3. Add in server-side Rendering
@@ -255,4 +263,5 @@ Please [open an issue](https://github.com/org/repo/issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/org/repo/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull
+request](https://github.com/org/repo/compare/).
