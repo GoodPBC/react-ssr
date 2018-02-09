@@ -6,7 +6,8 @@
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Rendering Server](#rendering)
+* [Rendering Server Setup](#rendering)
+* [Server Configuration](#Server_Config)
 * [Support](#support)
 * [Contributing](#contributing)
 
@@ -162,7 +163,7 @@ This is our server-side webpack config file that will allow us to write JSX on o
 "dev:server:build": "webpack --config webpack.server.js"
 ```
 
-This will create our build directory and bundle file. We are also going to make use of our nodemon package and create a development server run script in our package.json file. This will allow us to keep the server automatically runnning and "hot reloading" as we develop our app. This means that each time we make a change to our app our development server will automatically restart and reflect our latest code. the script is like this
+This will create our build directory and bundle file. We are also going to make use of our nodemon package and create a development server run script in our package.json file. This will allow us to keep the server automatically running and "hot reloading" as we develop our app. This means that each time we make a change to our app our development server will automatically restart and reflect our latest code. the script is like this
 
 ```
 "dev:server": "nodemon build/bundle.js"
@@ -183,6 +184,60 @@ We now should be rendering our first component at localhost:5000. If all is well
 This is pure HTML, we are not running and Javascript in the browser!
 
 If you are having issues please submit your issue to [Issues](https://github.com/GoodPBC/react-ssr/issues)
+
+### **EXPRESS SERVER SETUP Recap**
+
+##### What Problems have we solved here?
+
+_**Problem**_ - Running JSX on the Server
+_**Solution**_ - Run webpack on our server code and then execute the bundle.
+
+_**Problem**_ - We need to turn components into HTML  
+_**Solution**_ - We use the 'react-dom/server' Library's 'renderToString' function
+
+with traditional react we usually have a a separate client and server. and we write our components in JSX on the client side. We use react-dom's **"render()"** function to mount our components to a particular DOM node.
+
+With SSR we have discovered that we bundle all of our code on the server and instead use react-dom's **"renderToString()"** helper function to create an HTML structure on our server and send it all at once to the browser as raw HTML.
+
+## Server_Config
+
+**Setting Up A Dynamic Development Environment**
+
+In this section we will continue to work with our server. We will do additional setup and continue to refactor our code in order to give ourselves a full understanding of how to pull our server together.
+
+With our current setup we have one main challenge. Open your Home.js component and make some change to the content in the component and restart your app. You will notice that what is being rendered will not change. In order to have the changes represented we will need to run our build script again. That defeats the purpose of our setting up our hot reloading with nodemon. To fix this we will making changes to our package.json scripts. As it stands our build process is very manual. We want to achieve something like this:
+[Desired Development Build Flow](Project_Images/Desired_Dev_Build_Flow.png)
+
+Lets first make it so that webpack will restart with any changes to any of the files that we are working with by using the --watch operator to the end of our dev:server:build script. now run the script and you should get a terminal massage that says webpack is watching the files.
+
+This tells webpack to watch the files associated with our bundle and re-run anytime a change is made to one of them. Lets test this out by adding some basic style to our Home Component. Like so:
+
+```
+const Home = () => {
+  return (
+    <div>
+      <h1 style={HomeStyle}>I am the Home Component</h1>
+    </div>
+  );
+};
+
+const HomeStyle = {
+  color: 'red',
+  backgroundColor: 'black'
+};
+```
+
+If you refresh your page you will see that Webpack has rebundled the file and Nodemon has restarted the server to reflect the changes made to our bundle. So now we have a pretty dynamic development build and dev process going.
+
+**Lets Talk About Isomorphic Javascript & Universal Javascript**
+
+_What is it_?
+
+**Universal Javascript** means that the same javascript code runs on the server and the browser.
+**Isomorphic Javascript** means that the same javascript code runs on the server and the browser.
+**Server Side Rendering** means we are generating HTML on the Server
+
+In order to be truly using Universal Javascript, We should be using the same exact code on the server and client. However, at the time of creating this boilerplate NodeJS does not have built in support for es2015 modules. So we are using the the CommonJS module system in our index.js file will makes use of require statements and in our components we are using the es2015 modules system which makes use of imports and exports. We are running webpack and babel over our whole project., which does support es2015 modules. This allows us to make use of the es2015 modules. Because our server files are being handled by webpack and babel we want to do this so we can keep the context between react and express/node the same. Lets refactor our code to convert our index.js require statements to import statements like this
 
 2. Just a landing page
 3. Add in server-side Rendering
