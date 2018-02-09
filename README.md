@@ -264,6 +264,14 @@ Code:
 [webpack commit ](https://github.com/GoodPBC/react-ssr/commit/d6e8d8d8ce45dfb52b2c1c63227bd0fd05e0b8c4)
 [src/client/index.js commit](https://github.com/GoodPBC/react-ssr/commit/51d493c2f96ddb0e4429da1c956e4e02e890040e)
 
+**WORKING WITH THE PUBLIC DIRECTORY**
+
+We have created our client side bundle but the browser has not picked it up yet and made it available. In order to make sure the browser attempts to pick up our new client side bundle we need to make it available by telling Express to treat the newly created Public directory as a Public directory and make it available to anyone who requests it
+
+The way we do this is to take our "content" that variable that is rendering our Home.js component and we create another variable called html, we set it equal to a snippet with a div that renders our content and a script that grabs our bundle and sends it to the browser in the request like this:
+
+[client bundle commit]()
+
 2. Just a landing page
 3. Add in server-side Rendering
 4. Add React router

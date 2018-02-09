@@ -10,8 +10,22 @@ app.listen(PORT, () => {
   console.log('server is running on:', { PORT });
 });
 
+//publicly available to
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
+  //this is our content
   const content = renderToString(<Home />);
 
-  res.send(content);
+  //html snippet to serve content in html and script tag.
+  const html = `
+		<html>
+			<head></head>
+			<body>
+				<div>${content}</div>
+				<script src="bundle.js"></script>
+			</body>
+		</html>
+	`;
+  res.send(html);
 });
