@@ -246,7 +246,23 @@ Normally we have our ReactJS components that are sent to the browser and rendere
 
 With the way we have our application set up, we are bundling on the server and sending a string or raw HTML to the browser, so no javascript code is being sent to the browser. This means that our event handlers will not register.
 
-We need to create a way to send down all of our applications javascript code to the browser so that we can inject it onto the client and make our application work the way we want it to.
+We need to create a way to send down all of our applications javascript code to the browser so that we can inject it onto the client and make our application work the way we want it to. In order to do this we need to create another bundle file. The bundle we have has our server code and our React code.
+
+We will need to create a second bundle that contains only our client side code.
+
+**Client Side Webpack Config**
+
+make a new file called webpack.client.js and copy over the code from the original weback file.
+
+We will need to make a few changes. firstly we remove the node target becasue this is for the browser.
+
+We also need a new entry point. IN order to do this we will make a client.js file in the client directory.This is our client side entry point.
+
+We need to change our output path to our public directory.
+
+Code:  
+[webpack commit ](https://github.com/GoodPBC/react-ssr/commit/d6e8d8d8ce45dfb52b2c1c63227bd0fd05e0b8c4)
+[src/client/index.js commit](https://github.com/GoodPBC/react-ssr/commit/51d493c2f96ddb0e4429da1c956e4e02e890040e)
 
 2. Just a landing page
 3. Add in server-side Rendering
