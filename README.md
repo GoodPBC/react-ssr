@@ -153,7 +153,36 @@ The main difference is that we will use Node to run our bundled file. Node Norma
 
 To make this happen we need to configure webpack.js. In the root directory we create a file called 'webpack.js.server.js' to indicate that this is our server-side webpack.js file.
 
-We need to tell webpack.js to target node because we are bundling for the server instead of the client. We also need to tell webpack.js where to look for our root file or 'entry' by feeding it a project path. We also need to tell webpack.js where to put the outputted bundle that it generates. The last thing we need to do is to tell webpack.js to run babel on all files that it runs so that all of our code is trans-piled to es5 code. and feed it some rules to and presets, which are note in the code comments here:
+We need to tell webpack.js to target node because we are bundling for the server instead of the client. We also need to tell webpack.js where to look for our root file or 'entry' by feeding it a project path. We also need to tell webpack.js where to put the outputted bundle that it generates. The last thing we need to do is to tell webpack.js to run babel on all files that it runs so that all of our code is trans-piled to es5 code. and feed it some rules to and presets, which are noted in the code comments here:
+[github commit](https://github.com/GoodPBC/react-ssr/commit/6c46f0169aad0245862f8e808181aae71e7ec7c4#diff-9f405c4b4741262db413b61e491797f4)
+
+This is our server-side webpack config file that will allow us to write JSX on our server and convert it into es2015 and execute it with node.js. Now that we have created this file we will create a script in our server's pakcage.json that will do a build(transpile our code so it can be read by the browser) in our app. In our file we will add a script as such:
+
+```
+"dev:server:build": "webpack --config webpack.server.js"
+```
+
+This will create our build directory and bundle file. We are also going to make use of our nodemon package and create a development server run script in our package.json file. This will allow us to keep the server automatically runnning and "hot reloading" as we develop our app. This means that each time we make a change to our app our development server will automatically restart and reflect our latest code. the script is like this
+
+```
+"dev:server": "nodemon build/bundle.js"
+```
+
+To start our development server we will use the command:
+
+```
+npm run dev:server
+```
+
+We now should be rendering our first component at localhost:5000. If all is well you should be seeing our component on your screen and you should be seeing the following code upon browser inspection:
+
+```
+<div data-reactroot="">I am the Home Component</div>
+```
+
+This is pure HTML, we are not running and Javascript in the browser!
+
+If you are having issues please submit your issue to [Issues](https://github.com/GoodPBC/react-ssr/issues)
 
 2. Just a landing page
 3. Add in server-side Rendering
