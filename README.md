@@ -25,103 +25,104 @@ npm install
 
         1. NPM Package Dependencies and Descriptions
             	..* axios: 0.16.2
-
         			.__Promise based HTTP client for the browser and node.js__ [Github](https://github.com/axios/axios) || [NPM](https://www.npmjs.com/package/axios)
+
         			..* babel-cli: 6.26
-
         			.__Babel command line tool__ [Github](https://github.com/babel/babel/tree/master/packages/babel-cli) || [NPM](https://www.npmjs.com/package/babel-cli)
+
         			..* babel-core: 6.26.0
-
         			.__Babel compiler core__[Github](https://github.com/babel/babel/tree/master/packages/babel-core) || [NPM](https://www.npmjs.com/package/babel-core)
+
             	..* babel-loader: 7.1.2
-
         			.__This package allows transpiling JavaScript files using Babel and webpack.js.__ [Github](github.com/babel/babel-loader) || [NPM]https://www.npmjs.com/package/babel-loader)
+
             	..* babel-preset-env: 1.6.0
-
         			.__A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.__[Github](github.com/babel/babel-preset-env) || [NPM](https://www.npmjs.com/package/babel-preset-env) || [Website](http://babeljs.io)
+
             	..* babel-preset-es2015: 6.24.1
-
         			.__Babel preset for all es2015 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2015) || [NPM](https://www.npmjs.com/package/babel-preset-es2015)
+
             	..* babel-preset-es2017: 6.24.1
-
         			.__Babel preset for all es2017 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2017) || [NPM](https://www.npmjs.com/package/babel-preset-es2017)
+
             	..* babel-preset-react: 6.24.1
-
         			.__Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || [NPM](https://www.npmjs.com/package/babel-preset-react)
+
             	..* babel-preset-stage-0: 6.24.1
+    						.__Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || 	[NPM](https://www.npmjs.com/package/babel-preset-react)
 
-        			.__Package description here__[Github](https://github.com/expressjs/compression) || [NPM](https://www.npmjs.com/package/compression)
             	..* compression: 1.7.0
+        			.__Package description here__[Github](https://github.com/expressjs/compression) || [NPM](https://www.npmjs.com/package/compression)
 
-        			.__Package description here__[Github](https://github.com/kimmobrunfeldt/concurrently) || [NPM](https://www.npmjs.com/package/concurrently)
             	..* concurrently: 3.5.0
+        			.__Package description here__[Github](https://github.com/kimmobrunfeldt/concurrently) || [NPM](https://www.npmjs.com/package/concurrently)
 
-        			.__Package description here__[Github](https://github.com/expressjs/express) || [NPM](https://www.npmjs.com/package/express)
           		..* express: 4.15.4  
+        			.__Package description here__[Github](https://github.com/expressjs/express) || [NPM](https://www.npmjs.com/package/express)
 
-        			.__Package description here__[Github](http://github.com/villadora/express-http-proxy) || [NPM](https://www.npmjs.com/package/express-http-proxy)
           		..* express-http-proxy: 1.0.6
+        			.__Package description here__[Github](http://github.com/villadora/express-http-proxy) || [NPM](https://www.npmjs.com/package/express-http-proxy)
 
-        			.__Package description here__[Github](https://github.com/lodash/lodash) || [NPM](https://www.npmjs.com/search?q=lodash)
           		..* lodash: 4.17.4
+        			.__Package description here__[Github](https://github.com/lodash/lodash) || [NPM](https://www.npmjs.com/search?q=lodash)
 
-        			.__Package description here__[Github](https://github.com/remy/nodemon) || [NPM](https://www.npmjs.com/search?q=nodemon&page=1&ranking=optimal)
           		..* nodemon: 1.12.0
+        			.__Package description here__[Github](https://github.com/remy/nodemon) || [NPM](https://www.npmjs.com/search?q=nodemon&page=1&ranking=optimal)
 
-        			.__Package description here__[Github](https://github.com/mysticatea/npm-run-all) || [NPM](https://www.npmjs.com/search?q=npm-run-all&page=1&ranking=optimal)
           		..* npm-run-all: 4.1.1
+        			.__Package description here__[Github](https://github.com/mysticatea/npm-run-all) || [NPM](https://www.npmjs.com/search?q=npm-run-all&page=1&ranking=optimal)
 
-        			.__Package description here__[Github](https://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react)
           		..* react: 16.0.0
+        			.__Package description here__[Github](https://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react)
 
-        			.__Package description here__[Github](http://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react-dom)
           		..* react-dom: 16.0.0
+        			.__Package description here__[Github](http://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react-dom)
 
-        			.__Package description here__[Github](http://github.com/nfl/react-helmet) || [NPM](https://www.npmjs.com/package/react-helmet)
         			..* react-helmet: 5.2.0
+        			.__Package description here__[Github](http://github.com/nfl/react-helmet) || [NPM](https://www.npmjs.com/package/react-helmet)
 
-        			.__Package description here__[Github](http://github.com/reactjs/react-redux) || [NPM](https://www.npmjs.com/package/react-redux)
         			..* react-redux: 5.0.6
+        			.__Package description here__[Github](http://github.com/reactjs/react-redux) || [NPM](https://www.npmjs.com/package/react-redux)
 
-        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-config)
         			..* react-router-config: 1.0.0-beta.4
+        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-config)
 
-        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-dom)
         			..* react-router-dom": 4.2.2
+        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-dom)
 
-        			.__Package description here__[Github](http://github.com/reactjs/redux) || [NPM](https://www.npmjs.com/package/redux)
       				..\* redux": 3.7.2
+        			.__Package description here__[Github](http://github.com/reactjs/redux) || [NPM](https://www.npmjs.com/package/redux)
 
-        			.__Package description here__[Github](http://github.com/gaearon/redux-thunk) || [NPM](https://www.npmjs.com/package/redux-thunk)
         			..* redux-thunk: 2.2.0
+        			.__Package description here__[Github](http://github.com/gaearon/redux-thunk) || [NPM](https://www.npmjs.com/package/redux-thunk)
 
-        			.__Package description here__[Github](http://github.com/yahoo/serialize-javascript) || [NPM](https://www.npmjs.com/package/serialize-javascript)
         			..* serialize-javascript: 1.4.0
+        			.__Package description here__[Github](http://github.com/yahoo/serialize-javascript) || [NPM](https://www.npmjs.com/package/serialize-javascript)
 
-        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js) || [NPM]https://www.npmjs.com/package/webpack.js)
         			..* webpack.js: 3.5.6
+        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js) || [NPM]https://www.npmjs.com/package/webpack.js)
 
-        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js-dev-server) || [NPM](https://www.npmjs.com/package/webpack.js-dev-server)
         			..* webpack.js-dev-server: 2.8.2
+        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js-dev-server) || [NPM](https://www.npmjs.com/package/webpack.js-dev-server)
 
-        			.__Package description here__[Github](http://github.com/survivejs/webpack.js-merge) || [NPM](https://www.npmjs.com/package/webpack.js-merge)
         			..* webpack.js-merge: 4.1.0
+        			.__Package description here__[Github](http://github.com/survivejs/webpack.js-merge) || [NPM](https://www.npmjs.com/package/webpack.js-merge)
 
-        			.__Package description here__[Github](http://github.com/liady/webpack.js-node-externals) || [NPM](https://www.npmjs.com/package/webpack.js-node-externals)
         			..* webpack.js-node-externals: 1.6.0
+    					.**Package description here**[Github](http://github.com/liady/webpack.js-node-externals) || [NPM](https://www.npmjs.com/package/webpack.js-node-externals)
 
 ## Rendering Server - Putting it together
 
 ### Build A Bare bones Express Application
 
 1. **Create a simple express server with a home component.**
-   we are going to create our package.json file and install all of our packages from above. -- Command["npm init"]
+   we are going to create our package.json file and install all of our packages from above. -- `npm init`
 
 we will create a "src" directory. This is the directory that will hold all of our server and react app logic for our app.
 
-Inside our src directory lets make an "index.js" file. this is our root file for our express application. will set up a new express app and basic server in this file like so: [gitcommit](https://github.com/GoodPBC/react-ssr/commit/afb58e5ceb89b32c9e6e1c36c99ef8aa5997d4a0)
+Inside our /src directory lets make an `index.js` file. this is our root file for our express application. We will set up a new express app and basic server in this file like so: [gitcommit](https://github.com/GoodPBC/react-ssr/commit/afb58e5ceb89b32c9e6e1c36c99ef8aa5997d4a0)
 
-We will then make a test route in our express application to make sure that everything is properly wired up. We do this using a route handler like this:
+We will then make a test route in our express application to make sure that everything is properly wired up. We do this using a route handler:
 [gitcommit](https://github.com/GoodPBC/react-ssr/commit/fc14167f31004c7fbd94c17abf59355e26ee07da)
 
 We will need a place to put our react components when we start creating them. Inside the src directory create a folder called client. Inside the client directory we will create a components folder and in components we will create our first simple component called "home.js" like this:
@@ -256,7 +257,7 @@ make a new file called webpack.client.js and copy over the code from the origina
 
 We will need to make a few changes. firstly we remove the node target becasue this is for the browser.
 
-We also need a new entry point. IN order to do this we will make a client.js file in the client directory.This is our client side entry point.
+We also need a new entry point. IN order to do this we will make an index.js file in the root of the components directory.This is our client side entry point.
 
 We need to change our output path to our public directory.
 
@@ -270,7 +271,9 @@ We have created our client side bundle but the browser has not picked it up yet 
 
 The way we do this is to take our "content" that variable that is rendering our Home.js component and we create another variable called html, we set it equal to a snippet with a div that renders our content and a script that grabs our bundle and sends it to the browser in the request like this:
 
-[client bundle commit]()
+[client bundle commit](https://github.com/GoodPBC/react-ssr/commit/b1b5445f79a48b2f03c51b2b14af0c3487952924#diff-1fdf421c05c1140f6d71444ea2b27638)
+
+We are now running two different bundles: [Diagram](Project_Images/Client_&_Server_Bundles.png)
 
 2. Just a landing page
 3. Add in server-side Rendering
