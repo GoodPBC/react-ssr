@@ -19,97 +19,125 @@ Download to your project directory, add `README.md`, and commit:
 npm install
 ```
 
-## Usage
+# Usage
 
-# Usage instructions
+### NPM PACKAGES & DESCRIPTIONS
 
-        1. NPM Package Dependencies and Descriptions
-            	..* axios: 0.16.2
-        			.__Promise based HTTP client for the browser and node.js__ [Github](https://github.com/axios/axios) || [NPM](https://www.npmjs.com/package/axios)
+_axios: 0.16.2_
 
-        			..* babel-cli: 6.26
-        			.__Babel command line tool__ [Github](https://github.com/babel/babel/tree/master/packages/babel-cli) || [NPM](https://www.npmjs.com/package/babel-cli)
+    Promise based HTTP client for the browser and node.js [Github](https://github.com/axios/axios) || [NPM](https://www.npmjs.com/package/axios)
 
-        			..* babel-core: 6.26.0
-        			.__Babel compiler core__[Github](https://github.com/babel/babel/tree/master/packages/babel-core) || [NPM](https://www.npmjs.com/package/babel-core)
+_babel-cli: 6.26_
 
-            	..* babel-loader: 7.1.2
-        			.__This package allows transpiling JavaScript files using Babel and webpack.js.__ [Github](github.com/babel/babel-loader) || [NPM]https://www.npmjs.com/package/babel-loader)
+    Babel command line tool [Github](https://github.com/babel/babel/tree/master/packages/babel-cli) || [NPM](https://www.npmjs.com/package/babel-cli)
 
-            	..* babel-preset-env: 1.6.0
-        			.__A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.__[Github](github.com/babel/babel-preset-env) || [NPM](https://www.npmjs.com/package/babel-preset-env) || [Website](http://babeljs.io)
+_babel-core: 6.26.0_
 
-            	..* babel-preset-es2015: 6.24.1
-        			.__Babel preset for all es2015 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2015) || [NPM](https://www.npmjs.com/package/babel-preset-es2015)
+    Babel compiler core__[Github](https://github.com/babel/babel/tree/master/packages/babel-core) || [NPM](https://www.npmjs.com/package/babel-core)
 
-            	..* babel-preset-es2017: 6.24.1
-        			.__Babel preset for all es2017 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2017) || [NPM](https://www.npmjs.com/package/babel-preset-es2017)
+_babel-loader: 7.1.2_
 
-            	..* babel-preset-react: 6.24.1
-        			.__Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || [NPM](https://www.npmjs.com/package/babel-preset-react)
+    This package allows transpiling JavaScript files using Babel and webpack.js.__ [Github](github.com/babel/babel-loader) || [NPM]https://www.npmjs.com/package/babel-loader)
 
-            	..* babel-preset-stage-0: 6.24.1
-    						.__Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || 	[NPM](https://www.npmjs.com/package/babel-preset-react)
+_babel-preset-env: 1.6.0_
 
-            	..* compression: 1.7.0
-        			.__Package description here__[Github](https://github.com/expressjs/compression) || [NPM](https://www.npmjs.com/package/compression)
+    A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.__[Github](github.com/babel/babel-preset-env) || [NPM](https://www.npmjs.com/package/babel-preset-env) || [Website](http://babeljs.io)
 
-            	..* concurrently: 3.5.0
-        			.__Package description here__[Github](https://github.com/kimmobrunfeldt/concurrently) || [NPM](https://www.npmjs.com/package/concurrently)
+_babel-preset-es2015: 6.24.1_
 
-          		..* express: 4.15.4  
-        			.__Package description here__[Github](https://github.com/expressjs/express) || [NPM](https://www.npmjs.com/package/express)
+    Babel preset for all es2015 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2015) || [NPM](https://www.npmjs.com/package/babel-preset-es2015)
 
-          		..* express-http-proxy: 1.0.6
-        			.__Package description here__[Github](http://github.com/villadora/express-http-proxy) || [NPM](https://www.npmjs.com/package/express-http-proxy)
+_babel-preset-es2017: 6.24.1_
 
-          		..* lodash: 4.17.4
-        			.__Package description here__[Github](https://github.com/lodash/lodash) || [NPM](https://www.npmjs.com/search?q=lodash)
+    Babel preset for all es2017 plugins.__[Github](github.com/babel/babel/tree/master/packages/babel-preset-es2017) || [NPM](https://www.npmjs.com/package/babel-preset-es2017)
 
-          		..* nodemon: 1.12.0
-        			.__Package description here__[Github](https://github.com/remy/nodemon) || [NPM](https://www.npmjs.com/search?q=nodemon&page=1&ranking=optimal)
+_babel-preset-react: 6.24.1_
 
-          		..* npm-run-all: 4.1.1
-        			.__Package description here__[Github](https://github.com/mysticatea/npm-run-all) || [NPM](https://www.npmjs.com/search?q=npm-run-all&page=1&ranking=optimal)
+    Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || [NPM](https://www.npmjs.com/package/babel-preset-react)
 
-          		..* react: 16.0.0
-        			.__Package description here__[Github](https://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react)
+_babel-preset-stage-0: 6.24.1_
 
-          		..* react-dom: 16.0.0
-        			.__Package description here__[Github](http://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react-dom)
+    	Babel preset for all React plugins__[Github](https://github.com/babel/babel/tree/master/packages/babel-preset-react) || 	[NPM](https://www.npmjs.com/package/babel-preset-react)
 
-        			..* react-helmet: 5.2.0
-        			.__Package description here__[Github](http://github.com/nfl/react-helmet) || [NPM](https://www.npmjs.com/package/react-helmet)
+_compression: 1.7.0_
 
-        			..* react-redux: 5.0.6
-        			.__Package description here__[Github](http://github.com/reactjs/react-redux) || [NPM](https://www.npmjs.com/package/react-redux)
+    Package description here__[Github](https://github.com/expressjs/compression) || [NPM](https://www.npmjs.com/package/compression)
 
-        			..* react-router-config: 1.0.0-beta.4
-        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-config)
+_concurrently: 3.5.0_
 
-        			..* react-router-dom": 4.2.2
-        			.__Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-dom)
+    Package description here__[Github](https://github.com/kimmobrunfeldt/concurrently) || [NPM](https://www.npmjs.com/package/concurrently)
 
-      				..\* redux": 3.7.2
-        			.__Package description here__[Github](http://github.com/reactjs/redux) || [NPM](https://www.npmjs.com/package/redux)
+_express: 4.15.4 _
 
-        			..* redux-thunk: 2.2.0
-        			.__Package description here__[Github](http://github.com/gaearon/redux-thunk) || [NPM](https://www.npmjs.com/package/redux-thunk)
+    Package description here__[Github](https://github.com/expressjs/express) || [NPM](https://www.npmjs.com/package/express)
 
-        			..* serialize-javascript: 1.4.0
-        			.__Package description here__[Github](http://github.com/yahoo/serialize-javascript) || [NPM](https://www.npmjs.com/package/serialize-javascript)
+_express-http-proxy: 1.0.6_
 
-        			..* webpack.js: 3.5.6
-        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js) || [NPM]https://www.npmjs.com/package/webpack.js)
+    Package description here__[Github](http://github.com/villadora/express-http-proxy) || [NPM](https://www.npmjs.com/package/express-http-proxy)
 
-        			..* webpack.js-dev-server: 2.8.2
-        			.__Package description here__[Github](http://github.com/webpack.js/webpack.js-dev-server) || [NPM](https://www.npmjs.com/package/webpack.js-dev-server)
+_lodash: 4.17.4_
 
-        			..* webpack.js-merge: 4.1.0
-        			.__Package description here__[Github](http://github.com/survivejs/webpack.js-merge) || [NPM](https://www.npmjs.com/package/webpack.js-merge)
+    Package description here__[Github](https://github.com/lodash/lodash) || [NPM](https://www.npmjs.com/search?q=lodash)
 
-        			..* webpack.js-node-externals: 1.6.0
-    					.**Package description here**[Github](http://github.com/liady/webpack.js-node-externals) || [NPM](https://www.npmjs.com/package/webpack.js-node-externals)
+_nodemon: 1.12.0_
+
+    Package description here__[Github](https://github.com/remy/nodemon) || [NPM](https://www.npmjs.com/search?q=nodemon&page=1&ranking=optimal)
+
+_npm-run-all: 4.1.1_
+
+    Package description here__[Github](https://github.com/mysticatea/npm-run-all) || [NPM](https://www.npmjs.com/search?q=npm-run-all&page=1&ranking=optimal)
+
+_react: 16.0.0_
+
+    Package description here__[Github](https://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react)
+
+_react-dom: 16.0.0_
+
+    Package description here__[Github](http://github.com/facebook/react) || [NPM](https://www.npmjs.com/package/react-dom)
+
+_react-helmet: 5.2.0_
+
+    Package description here__[Github](http://github.com/nfl/react-helmet) || [NPM](https://www.npmjs.com/package/react-helmet)
+
+_react-redux: 5.0.6_
+
+    Package description here__[Github](http://github.com/reactjs/react-redux) || [NPM](https://www.npmjs.com/package/react-redux)
+
+_react-router-config: 1.0.0-beta.4_
+
+    Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-config)
+
+_react-router-dom": 4.2.2_
+
+    Package description here__[Github](http://github.com/ReactTraining/react-router) || [NPM](https://www.npmjs.com/package/react-router-dom)
+
+\ redux": 3.7.2\*
+
+    Package description here__[Github](http://github.com/reactjs/redux) || [NPM](https://www.npmjs.com/package/redux)
+
+_redux-thunk: 2.2.0_
+
+    Package description here__[Github](http://github.com/gaearon/redux-thunk) || [NPM](https://www.npmjs.com/package/redux-thunk)
+
+_serialize-javascript: 1.4.0_
+
+    Package description here__[Github](http://github.com/yahoo/serialize-javascript) || [NPM](https://www.npmjs.com/package/serialize-javascript)
+
+_webpack.js: 3.5.6_
+
+    Package description here__[Github](http://github.com/webpack.js/webpack.js) || [NPM]https://www.npmjs.com/package/webpack.js)
+
+_webpack.js-dev-server: 2.8.2_
+
+    Package description here__[Github](http://github.com/webpack.js/webpack.js-dev-server) || [NPM](https://www.npmjs.com/package/webpack.js-dev-server)
+
+_webpack.js-merge: 4.1.0_
+
+    Package description here__[Github](http://github.com/survivejs/webpack.js-merge) || [NPM](https://www.npmjs.com/package/webpack.js-merge)
+
+_webpack.js-node-externals: 1.6.0_
+.\*
+ckage description here\*\*[Github](http://github.com/liady/webpack.js-node-externals) || [NPM](https://www.npmjs.com/package/webpack.js-node-externals)
 
 ## Rendering Server - Putting it together
 
